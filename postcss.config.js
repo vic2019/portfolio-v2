@@ -1,5 +1,8 @@
-const postcssPresetEnv = require(`postcss-preset-env`);
+const tailwind = require('tailwindcss');
+const postcssPresetEnv = require('postcss-preset-env');
+
+require('@fullhuman/postcss-purgecss');
 
 module.exports = () => ({
-  plugins: [require('tailwindcss'), postcssPresetEnv()],
+  plugins: [tailwind, postcssPresetEnv()],
 });
