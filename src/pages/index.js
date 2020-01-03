@@ -9,7 +9,7 @@ import '../styles/main.css';
 const Index = () => (
   <>
     <SEO title="Home" />
-    <h1 className="text-red-300 m-20">Index</h1>
+    <h1 className="text-blue-300 m-20">Index</h1>
   </>
 );
 
