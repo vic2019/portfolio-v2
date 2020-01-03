@@ -7,24 +7,23 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-purgecss`,
+      resolve: `gatsby-plugin-purgecss`, // Must come after postcss plugin
       options: {
         printRejected: true, // Print removed selectors and processed file names
         tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        purgeOnly: ['components/', '/main.css'], // Purge only these files/folders
+        purgeOnly: ['/main.css'], // Purge only these files/folders
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
   ],
 };
