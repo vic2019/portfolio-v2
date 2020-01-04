@@ -25,7 +25,7 @@ const ProjectList = () => (
       }
     `}
     render={({ markdowns: { projects } }) => (
-      <>
+      <div className="border-l-1 border-r-1 border-gray-400">
         <SEO title="List of Projects" />
         {projects.map((project, index) => (
           <ProjectCard
@@ -35,7 +35,7 @@ const ProjectList = () => (
             key={project.frontmatter.index}
           />
         ))}
-      </>
+      </div>
     )}
   />
 );
