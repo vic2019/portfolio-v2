@@ -2,29 +2,26 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 
-const ProjectCard = ({ rawMarkdownBody, frontmatter, isEven }) => (
+const ProjectCard = ({ body, index, title, description, imageUrl, isEven }) => (
   <>
-    <img src={frontmatter.imageUrl} alt={`Image for ${frontmatter.title}`} />
-    <ReactMarkdown source={rawMarkdownBody} />
-    <p className="text-green-500 text-2xl">{isEven ? 'left' : 'right'}</p>
+    <ReactMarkdown source={body} />
   </>
 );
 
 ProjectCard.propTypes = {
-  rawMarkdownBody: PropTypes.string,
-  frontmatter: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    index: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string,
-  }),
+  body: PropTypes.string,
+  index: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageUrl: PropTypes.string,
   isEven: PropTypes.bool.isRequired,
 };
 
 ProjectCard.defaultProps = {
-  rawMarkdownBody: '',
-  frontmatter: {
-    imageUrl: '',
-  },
+  body: '',
+  title: '',
+  description: '',
+  imageUrl: '',
 };
 
 export default ProjectCard;

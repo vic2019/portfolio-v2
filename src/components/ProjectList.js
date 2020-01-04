@@ -1,16 +1,19 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
 
-import ProjectCard from './ProjectCard';
-import SEO from './SEO';
+import ProjectCard from '../components/ProjectCard';
+import SEO from '../components/SEO';
 
 const ProjectList = () => (
   <StaticQuery
     query={graphql`
-      query ProjectsQuery {
-        allMarkdownRemark(sort: { order: DESC, fields: frontmatter___index }) {
-          nodes {
-            rawMarkdownBody
+      query {
+        markdowns: allMarkdownRemark(
+          sort: { fields: frontmatter___index, order: DESC }
+        ) {
+          projects: nodes {
+            body: rawMarkdownBody
             frontmatter {
               description
               imageUrl
@@ -21,20 +24,36 @@ const ProjectList = () => (
         }
       }
     `}
-    render={({ allMarkdownRemark: { nodes } }) => (
+    render={({ markdowns: { projects } }) => (
       <>
         <SEO title="List of Projects" />
-        {nodes.map((project, index) => (
+        {projects.map((project, index) => (
           <ProjectCard
-            frontmatter={project.frontmatter}
-            rawMarkdownBody={project.rawMarkdownBody}
+            body={project.body}
+            {...project.frontmatter}
             isEven={index % 2 === 0}
-            key={project.frontmatter.title}
+            key={project.frontmatter.index}
           />
         ))}
       </>
     )}
   />
 );
+
+ProjectList.propTypes = {
+  markdowns: PropTypes.shape({
+    projects: PropTypes.arrayOf(
+      PropTypes.shape({
+        body: PropTypes.string,
+        frontmatter: PropTypes.shape({
+          description: PropTypes.string,
+          imageUrl: PropTypes.string,
+          index: PropTypes.string.isRequired,
+          title: PropTypes.string,
+        }),
+      })
+    ).isRequired,
+  }).isRequired,
+};
 
 export default ProjectList;
