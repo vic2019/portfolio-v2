@@ -2,4 +2,28 @@
 
 @tailwind components;
 
+.project-card__text {
+    @apply text-gray-600;
+}
+
+.project-card__text ul {
+    @apply my-1 list-inside list-disc; 
+}
+
+.project-card__text a {
+    @apply text-blue-500;
+}
+
+.project-card__text_sm {
+    @apply text-sm font-light tracking-wide;
+}
+
+.project-card__text_sm h3 {
+    @apply mb-2 font-semibold;
+}
+
+.project-card__text_sm a {
+    @apply font-normal;
+}
+
 @tailwind utilities;
