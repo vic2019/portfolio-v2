@@ -13,7 +13,13 @@ const ProjectCard = ({ body, index, title, description, imageUrl, isEven }) => (
       className="project-card__text md:w-1/2 md:min-h-64"
       style={{ order: isEven ? 2 : 1 }}
     >
-      <ReactMarkdown source={body} />
+      <div
+        data-sal="slide-up"
+        data-sal-duration="400"
+        data-sal-easing="easeOutQuad"
+      >
+        <ReactMarkdown source={body} />
+      </div>
     </div>
   </div>
 );

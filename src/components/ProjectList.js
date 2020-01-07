@@ -3,14 +3,13 @@ import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import ProjectCard from '../components/ProjectCard';
-import SEO from '../components/SEO';
 
 const ProjectList = () => (
   <StaticQuery
     query={graphql`
       query {
         markdowns: allMarkdownRemark(
-          sort: { fields: frontmatter___index, order: DESC }
+          sort: { fields: frontmatter___index, order: ASC }
         ) {
           projects: nodes {
             body: rawMarkdownBody
@@ -25,8 +24,7 @@ const ProjectList = () => (
       }
     `}
     render={({ markdowns: { projects } }) => (
-      <div className="border-l-1 border-r-1 border-gray-400">
-        <SEO title="List of Projects" />
+      <>
         {projects.map((project, index) => (
           <ProjectCard
             body={project.body}
@@ -35,7 +33,7 @@ const ProjectList = () => (
             key={project.frontmatter.index}
           />
         ))}
-      </div>
+      </>
     )}
   />
 );

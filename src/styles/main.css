@@ -18,11 +18,12 @@
     @apply mb-2 font-semibold;
 }
 
+
 @screen sm {
     .project-card__text {
         @apply p-5 font-normal;
     }
-
+    
     .project-card__text ul {
         @apply my-2; 
     }
@@ -30,7 +31,7 @@
     .project-card__text h3 {
         @apply mb-3 text-base font-semibold;
     }    
-
+    
     .project-card__text a {
         @apply text-blue-500 font-medium;
     }
@@ -40,9 +41,47 @@
     .project-card__text {
         @apply py-6 px-8 leading-relaxed;
     }
-
+    
     .project-card__text h3 {
         @apply mb-4 text-lg;
+    }
+}
+
+.nav__tab {
+    @apply mr-2 ml-1 mb-1;
+}
+
+.nav__tab_active h2 {
+    border-bottom: 2px solid;
+    @apply border-pink-500;
+    @apply text-pink-500;
+}
+
+.nav__tab_active svg {
+    @apply text-pink-600;
+}
+
+.nav__icon {
+    @apply inline h-4 w-auto fill-current text-gray-700;
+}
+
+
+/* Stack nav tabs on smallest screens */
+@media (max-width: 359px) {
+    .nav__container {
+        @apply flex-col items-start;
+    }
+}
+
+@screen sm {
+    .nav__tab {
+        @apply mr-6;
+    }
+}
+
+@screen md {
+    .nav__icon {
+        @apply h-5;
     }
 }
 

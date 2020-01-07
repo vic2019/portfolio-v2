@@ -4,11 +4,11 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import ProjectList from '../components/ProjectList';
 
-const Index = () => (
-  <Layout isIndex={true}>
-    <SEO title="Home" />
+const Projects = () => (
+  <Layout>
+    <SEO title="Projects" />
     <ProjectList />
   </Layout>
 );
 
-export default Index;
+export default Projects;
