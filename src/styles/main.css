@@ -3,7 +3,7 @@
 @tailwind components;
 
 .project-card__text {
-    @apply text-gray-600;
+    @apply p-4 text-gray-600 text-sm font-light tracking-wide;
 }
 
 .project-card__text ul {
@@ -11,19 +11,45 @@
 }
 
 .project-card__text a {
-    @apply text-blue-500;
+    @apply text-blue-500 font-normal;
 }
 
-.project-card__text_sm {
-    @apply text-sm font-light tracking-wide;
-}
-
-.project-card__text_sm h3 {
+.project-card__text h3 {
     @apply mb-2 font-semibold;
 }
 
-.project-card__text_sm a {
-    @apply font-normal;
+@screen sm {
+    .project-card__text {
+        @apply p-5 font-normal;
+    }
+
+    .project-card__text ul {
+        @apply my-2; 
+    }
+    
+    .project-card__text h3 {
+        @apply mb-3 text-base font-semibold;
+    }    
+
+    .project-card__text a {
+        @apply text-blue-500 font-medium;
+    }
+}
+
+@screen xl {    
+    .project-card__text {
+        @apply py-6 px-8 leading-relaxed;
+    }
+
+    .project-card__text h3 {
+        @apply mb-4 text-lg;
+    }
 }
 
 @tailwind utilities;
+
+.min-h-64 {
+    min-height: 16rem;
+}
+
+

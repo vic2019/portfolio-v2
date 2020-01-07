@@ -1,10 +1,9 @@
 module.exports = {
   theme: {
     screens: {
-      xs: '425px', // 1 col with extra margin
-      sm: '640px',
-      md: '768px', // Row view
-      lg: '1024px',
+      sm: '480px',
+      md: '766px', // Not used as container in this project
+      lg: '978px',
       xl: '1280px',
     },
     extend: {
