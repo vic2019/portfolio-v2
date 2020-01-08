@@ -85,6 +85,33 @@
     }
 }
 
+.contact__input {
+    @apply w-full text-sm text-gray-700 p-1.5 px-2 my-2 border border-gray-500 rounded;
+}
+
+.contact__input::placeholder {
+    @apply text-gray-600 text-sm;
+}
+
+@screen md {
+    .contact__input {
+        @apply text-base py-2 px-3 my-3;
+    }
+
+    input.contact__input {
+        box-sizing: border-box;
+        width: 48%;
+    }
+}
+
+.contact__input:hover {
+    @apply bg-gray-100;
+}
+
+.contact__input:focus {
+    @apply bg-pink-100;
+}
+
 @tailwind utilities;
 
 .min-h-64 {

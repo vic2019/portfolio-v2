@@ -10,6 +10,9 @@ module.exports = {
       minHeight: {
         '64': '16rem',
       },
+      padding: {
+        '1.5': '0.38rem',
+      },
     },
   },
   variants: {},

@@ -28,9 +28,9 @@ const Layout = ({ children, isIndex }) => (
         <br />
         <span
           className="text-gray-500 font-bold tracking-wide italic md:font-extrabold"
-          data-sal={isIndex ? 'slide-up' : ''}
-          data-sal-duration="900"
-          data-sal-delay="950"
+          data-sal={isIndex ? 'fade' : ''}
+          data-sal-duration="850"
+          data-sal-delay="900"
           data-sal-easing="easeOutQuad"
         >
           Welcome to my portfolio.
@@ -52,7 +52,11 @@ const Layout = ({ children, isIndex }) => (
         </h2>
       </Link>
 
-      <Link to="resume" className="nav__tab" activeClassName="nav__tab_active">
+      <a
+        href="static/resume.pdf"
+        className="nav__tab"
+        activeClassName="nav__tab_active"
+      >
         <svg
           className="nav__icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -63,9 +67,13 @@ const Layout = ({ children, isIndex }) => (
         <h2 className="inline align-middle text-gray-600 font-medium ml-1 md:ml-2 md:text-xl">
           Resume
         </h2>
-      </Link>
+      </a>
 
-      <Link to="contact" className="nav__tab" activeClassName="nav__tab_active">
+      <Link
+        to="contact/"
+        className="nav__tab"
+        activeClassName="nav__tab_active"
+      >
         <svg
           className="nav__icon"
           xmlns="http://www.w3.org/2000/svg"

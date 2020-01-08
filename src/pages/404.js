@@ -1,7 +1,10 @@
 import React from 'react';
 
 const NotFoundPage = () => {
-  window.location.pathname = '';
+  // Redirect to homepage
+  React.useEffect(() => {
+    window.location.pathname = '';
+  }, []);
 
   return null;
 };
