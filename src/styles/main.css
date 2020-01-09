@@ -51,6 +51,17 @@
     @apply mr-2 ml-1 mb-1;
 }
 
+@screen md {
+    .nav__tab {
+        transition: transform 0.2s;
+        transition-delay: 0.1s;
+    }
+
+    .nav__tab:hover {
+        transform: translateY(-3px);
+    }
+}
+
 .nav__tab_active h2 {
     border-bottom: 2px solid;
     @apply border-pink-500;
@@ -62,7 +73,7 @@
 }
 
 .nav__icon {
-    @apply inline h-4 w-auto fill-current text-gray-700;
+    @apply inline mr-1 h-4 w-auto fill-current text-gray-700;
 }
 
 

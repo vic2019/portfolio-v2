@@ -6,7 +6,7 @@ import ProjectList from '../components/ProjectList';
 
 const Index = () => (
   <Layout isIndex={true}>
-    <SEO title="Home" />
+    <SEO title="Projects" />
     <ProjectList />
   </Layout>
 );

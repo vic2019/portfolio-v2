@@ -28,7 +28,10 @@ const ProjectList = () => (
         {projects.map((project, index) => (
           <ProjectCard
             body={project.body}
-            {...project.frontmatter}
+            title={project.frontmatter.title}
+            description={project.frontmatter.description}
+            imageUrl={project.frontmatter.imageUrl}
+            index={index}
             isEven={index % 2 === 0}
             key={project.frontmatter.index}
           />

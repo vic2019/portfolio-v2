@@ -14,7 +14,7 @@ const ProjectCard = ({ body, index, title, description, imageUrl, isEven }) => (
       style={{ order: isEven ? 2 : 1 }}
     >
       <div
-        data-sal="slide-up"
+        data-sal={index == 0 ? '' : 'slide-up'}
         data-sal-duration="400"
         data-sal-easing="easeOutQuad"
       >

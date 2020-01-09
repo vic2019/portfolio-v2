@@ -68,3 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# client config file - not actually secret
+src/**/*config.js
+

@@ -30,10 +30,15 @@ module.exports = {
         path: `${__dirname}/src/assets/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 0.1,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-scroll-reveal`,
   ],
 };
