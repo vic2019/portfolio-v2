@@ -1,7 +1,7 @@
 ---
-index: 0
+index: 3
 title: Dictionary Browser Add-On
-description: Project details for Dictionary Browser Add-On
+description:
 imageUrl: dictionary-addon-screenshot
 ---
 ### Dictionary Browser Add-On

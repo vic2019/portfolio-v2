@@ -1,7 +1,7 @@
 ---
-index: 1
+index: 0
 title: FlickPicks
-description: Project details for FlickPIcks
+description:
 imageUrl: flickpicks-screenshot
 ---
 ### FlickPicks

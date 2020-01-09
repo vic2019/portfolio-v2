@@ -1,9 +1,11 @@
 ---
-index: 3
+index: 4
 title: Portfolio v1
-description: Project details for Portfolio v1
+description:
 imageUrl: portfolio-v1-screenshot
 ---
 ### Portfolio v1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+My old portfolio page made with React and react-spring (for animation).  
+
+The contact form posts messages to AWS Lambda, which then forwards them to AWS's messaging services (SNS and SES).
