@@ -1,26 +1,18 @@
 ---
 index: 3
 title: LifeCalendar
-description:
+description: n/a
 imageUrl: lifecalendar-screenshot
 ---
 ### Life Calendar
 
-A React web app that creates a visual display of a user's lifespan measured in weeks.
+A web app that creates a visual display of the user's lifespan measured in weeks (a “life calendar”). Users may annotate their life calendar with colors and texts.
+ 
+* React, Ant Design
+* NoSQL database (DynamoDB)
+* S3, CloudFront
+* REST API through AWS API Gateway and Lambda
+* User management through AWS Cognito (with social media login)  
 
-Ant Design components
-Deployed on AWS S3 and CloudFront
-NoSQL database (DynamoDB)
-REST API through AWS API Gateway and Lambda
-User management through AWS Cognito (with social media login)
-Demo
-
-Source
-
-
-This portfolio page.
-
-Animation is done with react-spring
-The contact form at the bottom forwards messages to me by email and text through AWS SES and SNS.
-
+[Repo](https://github.com/vic2019/life-calendar)
 

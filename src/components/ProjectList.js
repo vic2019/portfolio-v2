@@ -14,7 +14,7 @@ const ProjectList = () => (
           projects: nodes {
             body: rawMarkdownBody
             frontmatter {
-              description
+              # description
               imageUrl
               index
               title
@@ -29,7 +29,7 @@ const ProjectList = () => (
           <ProjectCard
             body={project.body}
             title={project.frontmatter.title}
-            description={project.frontmatter.description}
+            // description={project.frontmatter.description}
             imageUrl={project.frontmatter.imageUrl}
             index={index}
             isEven={index % 2 === 0}
@@ -47,7 +47,7 @@ ProjectList.propTypes = {
       PropTypes.shape({
         body: PropTypes.string,
         frontmatter: PropTypes.shape({
-          description: PropTypes.string,
+          // description: PropTypes.string,
           imageUrl: PropTypes.string,
           index: PropTypes.string.isRequired,
           title: PropTypes.string,

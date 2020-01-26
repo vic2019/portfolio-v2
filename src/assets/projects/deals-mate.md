@@ -1,16 +1,19 @@
 ---
-index: 2
+index: 1
 title: Deals Mate
-description:
+description: n/a
 imageUrl: deals-mate-screenshot
 ---
-### A shopping list and price tracking app
+### Deals Mate
 
-* Tracks prices
-* Notifies users in real time
-* Social networking features
+A shopping list and price tracking web app that monitors price changes and notify users in real time. Users may also follow each others and receive update.
 
-Tack Stack:
-* React/Redux
+* JavaScript
+* React, Redux, React-Router
 * Node.js/Express
-* MongoDB/Mongoose, S3
+* MongoDB/Mongoose, Redis/Bull, 
+* AWS S3
+* Socket.io
+
+
+[Repo](https://github.com/hatchways/team-emerald)
