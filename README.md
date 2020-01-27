@@ -9,7 +9,8 @@ Todo:
 2. Write description for this porfolio page
 3. Update resume
 4. ~~Add favicon~~
-5. Deploy
+5. ~~Deploy~~
+6. Debug: Cancel form validation after submit
 
 ### To install:
 ```
