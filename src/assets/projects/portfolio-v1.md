@@ -2,7 +2,7 @@
 index: 4
 title: Portfolio v1
 description: n/a
-imageUrl: portfolio-v1-screenshot
+imgFilename: portfolio-v1-screenshot.png
 ---
 ### Portfolio v1
 

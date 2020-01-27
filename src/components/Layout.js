@@ -48,7 +48,7 @@ const Layout = ({ children, isIndex }) => (
       </Link>
 
       <a
-        href="static/resume.pdf"
+        href="../../Resume_Victor_Wang.pdf"
         className="nav__tab"
         activeClassName="nav__tab_active"
       >

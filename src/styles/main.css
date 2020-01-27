@@ -37,9 +37,21 @@
     }
 }
 
+@screen md {
+    .project-card__text {
+        @apply p-6;
+    }
+}
+
+@screen lg {
+    .project-card__text {
+        @apply p-8;
+    }
+}
+
 @screen xl {    
     .project-card__text {
-        @apply py-6 px-8 leading-relaxed;
+        @apply leading-relaxed;
     }
     
     .project-card__text h3 {

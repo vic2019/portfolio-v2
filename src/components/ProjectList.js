@@ -15,7 +15,7 @@ const ProjectList = () => (
             body: rawMarkdownBody
             frontmatter {
               # description
-              imageUrl
+              imgFilename
               index
               title
             }
@@ -29,8 +29,8 @@ const ProjectList = () => (
           <ProjectCard
             body={project.body}
             title={project.frontmatter.title}
-            // description={project.frontmatter.description}
-            imageUrl={project.frontmatter.imageUrl}
+            description={project.frontmatter.description}
+            imgFilename={project.frontmatter.imgFilename}
             index={index}
             isEven={index % 2 === 0}
             key={project.frontmatter.index}

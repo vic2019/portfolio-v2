@@ -2,7 +2,7 @@
 index: 3
 title: LifeCalendar
 description: n/a
-imageUrl: lifecalendar-screenshot
+imgFilename: lifecalendar-screenshot.png
 ---
 ### Life Calendar
 

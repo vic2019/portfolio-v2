@@ -2,7 +2,7 @@
 index: 2
 title: Dictionary Browser Add-On
 description: n/a
-imageUrl: dictionary-addon-screenshot
+imgFilename: dictionary-addon-screenshot.png
 ---
 ### Dictionary Browser Add-On
 

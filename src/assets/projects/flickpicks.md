@@ -2,7 +2,7 @@
 index: 0
 title: FlickPicks
 description: n/a
-imageUrl: flickpicks-screenshot
+imgFilename: flickpicks-screenshot.jpg
 ---
 ### FlickPicks
 

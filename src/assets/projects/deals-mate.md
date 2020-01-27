@@ -2,7 +2,7 @@
 index: 1
 title: Deals Mate
 description: n/a
-imageUrl: deals-mate-screenshot
+imgFilename: deals-mate-screenshot.png
 ---
 ### Deals Mate
 

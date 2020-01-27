@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     screens: {
       sm: '480px',
-      md: '766px', // Not used as container in this project
+      md: '766px', // Use sparingly
       lg: '978px',
       xl: '1280px',
     },
