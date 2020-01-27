@@ -31,6 +31,12 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/assets/favicon.png`,
+      },
+    },
     // `gatsby-transformer-sharp`,
     // `gatsby-plugin-sharp`,
   ],
