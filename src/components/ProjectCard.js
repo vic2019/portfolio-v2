@@ -38,7 +38,7 @@ ProjectCard.propTypes = {
   index: PropTypes.string.isRequired,
   title: PropTypes.string,
   description: PropTypes.string,
-  imageUrl: PropTypes.string,
+  imgFilename: PropTypes.string,
   isEven: PropTypes.bool.isRequired,
 };
 
@@ -46,7 +46,7 @@ ProjectCard.defaultProps = {
   body: '',
   title: '',
   description: '',
-  imageUrl: '',
+  imgFilename: '',
 };
 
 export default ProjectCard;
