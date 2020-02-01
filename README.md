@@ -2,15 +2,14 @@
 
 [Link](https:/victorwang.info)  
 
-This is a work in progress (though 90% complete).
+This is a work in progress (though 95% complete).
 
 Todo:
 1. ~~Add project images~~
-2. Write description for this porfolio page
-3. Update resume
-4. ~~Add favicon~~
-5. ~~Deploy~~
-6. Debug: Cancel form validation after submit
+2. ~~Update resume~~
+3. ~~Add favicon~~
+4. ~~Deploy~~
+5. ~~Debug: Reset form validation after submit~~
 
 ### To install:
 ```

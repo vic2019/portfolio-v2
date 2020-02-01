@@ -64,6 +64,7 @@ const Contact = () => {
         if (res.status == 200) {
           alert('Message sent!'); // To-do: implement custom notification bar
           setInput({ name: '', email: '', msg: '' });
+          setValid({ name: true, email: true, msg: true });
         } else {
           alert('Message was not sent. Please try again later.');
         }
