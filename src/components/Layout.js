@@ -30,7 +30,7 @@ const Layout = ({ children, isIndex }) => (
           className="text-gray-500 font-bold tracking-wide italic md:font-extrabold"
           data-sal={isIndex ? 'fade' : ''}
           data-sal-duration="850"
-          data-sal-delay="900"
+          data-sal-delay="800"
           data-sal-easing="easeOutQuad"
         >
           Welcome to my portfolio.
@@ -39,7 +39,7 @@ const Layout = ({ children, isIndex }) => (
       <HeaderImage />
     </header>
 
-    <nav className="nav__container px-2 mb-2 flex justify-start sm:px-10 md:mb-5 lg:mb-6 lg:px-24 xl:px-40">
+    <nav className="nav__container px-2 mb-2 flex justify-start sm:px-10 md:mb-5 lg:mb-6 lg:px-20 xl:px-32">
       <Link to="" className="nav__tab" activeClassName="nav__tab_active">
         <IconPortfolio />
         <h2 className="inline align-middle text-gray-600 font-medium md:ml-1 md:text-xl">
@@ -70,7 +70,7 @@ const Layout = ({ children, isIndex }) => (
       </Link>
     </nav>
 
-    <section className="px-2 sm:px-10 lg:px-24 xl:px-40">{children}</section>
+    <section className="px-2 sm:px-10 lg:px-20 xl:px-32">{children}</section>
   </div>
 );
 
