@@ -1,15 +1,8 @@
-### My portfolio page 
+## My portfolio page 
 
 [Link](https:/victorwang.info)  
 
-This is a work in progress (though 95% complete).
-
-Todo:
-1. ~~Add project images~~
-2. ~~Update resume~~
-3. ~~Add favicon~~
-4. ~~Deploy~~
-5. ~~Debug: Reset form validation after submit~~
+Tech: React.js, Gatsby.js, Tailwind CSS
 
 ### To install:
 ```
