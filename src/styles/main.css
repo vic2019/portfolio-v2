@@ -3,7 +3,7 @@
 @tailwind components;
 
 .project-card__text {
-    @apply p-4 text-gray-600 text-sm font-light tracking-wide;
+    @apply px-4 py-1 text-gray-600 text-sm font-light tracking-wide;
 }
 
 .project-card__text ul {
@@ -15,13 +15,13 @@
 }
 
 .project-card__text h3 {
-    @apply mb-2 font-semibold;
+    @apply mb-2 text-base font-semibold;
 }
 
 
 @screen sm {
     .project-card__text {
-        @apply p-5 font-normal;
+        @apply px-5 py-1 font-normal;
     }
     
     .project-card__text ul {
@@ -29,7 +29,7 @@
     }
     
     .project-card__text h3 {
-        @apply mb-3 text-base font-semibold;
+        @apply mb-3 font-semibold;
     }    
     
     .project-card__text a {
@@ -39,13 +39,17 @@
 
 @screen md {
     .project-card__text {
-        @apply p-6;
+        @apply px-6 py-2;
+    }
+
+    .project-card__text img {
+        height: auto;
     }
 }
 
 @screen lg {
     .project-card__text {
-        @apply p-8;
+        @apply px-8 py-2;
     }
 }
 
@@ -66,7 +70,6 @@
 @screen md {
     .nav__tab {
         transition: transform 0.2s;
-        transition-delay: 0.1s;
     }
 
     .nav__tab:hover {

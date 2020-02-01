@@ -5,15 +5,10 @@ module.exports = {
     author: `Victor Wang`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-purgecss`, // Must come after postcss plugin
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
-        tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        purgeOnly: ['/main.css'], // Purge only these files/folders
+        icon: `src/assets/favicon.png`,
       },
     },
     {
@@ -23,21 +18,29 @@ module.exports = {
         path: `${__dirname}/src/assets/projects/`,
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.1,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-purgecss`,
       options: {
-        icon: `src/assets/favicon.png`,
+        rejected: true,
+        printRejected: true,
+        develop: true,
+        tailwind: true,
+        purgeOnly: ['/main.css'],
       },
     },
-    // `gatsby-transformer-sharp`,
-    // `gatsby-plugin-sharp`,
   ],
 };
